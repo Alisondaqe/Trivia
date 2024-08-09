@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Adivina la canción</title>
+  <link rel="stylesheet" href="cancion.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<header>
+  <center>
+    <div class="wrapper">
+      <div class="time">
+        <span class="hour">00 </span>
+        <span class="colon">:</span>
+        <span class="minute">00</span>
+        <span class="colon">:</span>
+        <span class="second">00</span>
+        <span class="colon ns-colon">:</span>
+        <span class="millisecond">00</span>
+
+
+        <div class="buttons">
+          <button class="start">Start</button>
+          <button class="stop">Stop</button>
+          <button class="reset">reset</button>
+
+        </div>
+      </div>
+  </center>
+
+  <body>
+    <div class="container">
+      <h1>ADIVIMUSIC</h1>
+      <p>JUEGO MUSICAL</p>
+      <div class="container">
+        <section id="p0">
+          <h3> 1-Adivina la canción</h3>
+          <audio controls> <br>
+            <source src="audio/Daddy Yankee - Gasolina (Video Oficial) (mp3cut.net).mp3" type="audio/mp3">
+          </audio>
+          <br> <br>
+          <label>
+            <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">Con Calma
+          </label>
+          <br>
+          <label>
+            <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">Despacito
+          </label><br>
+          <label>
+            <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">Gasolina
+          </label>
+          <br>
+        </section>
+        <br>
+        <section id="p1">
+          <h3> 2-Adivina la cancion</h3>
+          <audio controls>
+            <source src="audio/Camilo - Vida de Rico (Official Video) (mp3cut.net).mp3" type="audio/mp3">
+          </audio>
+          <br> <br>
+          <label>
+            <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Tutu
+          </label>
+          <br>
+          <label>
+            <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Vida de Rico
+          </label><br>
+          <label>
+            <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Favorito
+          </label>
+          <br>
+        </section>
+        <br>
+        <section id="p2">
+          <h3> 3-Adivina la canción</h3>
+          <audio controls>
+            <source src="audio/KAROL G, Mariah Angeliq - EL MAKINON (Official Video) (mp3cut.net).mp3" type="audio/mp3">
+          </audio>
+          <br> <br>
+          <label>
+            <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">Makinon
+          </label>
+          <br>
+          <label>
+            <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Provenza
+          </label> <br>
+          <label>
+            <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">TQG
+          </label>
+          <br>
+        </section>
+        <br>
+        <section id="p3">
+          <h3> 4-Adivina la canción</h3>
+          <audio controls>
+            <source src="audio/TWICE _The Feels_ M-V (mp3cut.net).mp3" type="audio/mp3">
+          </audio>
+          <br> <br>
+          <label>
+            <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">Yes or Yes
+          </label>
+          <br>
+          <label>
+            <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">The Feels
+          </label> <br>
+          <label>
+            <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Talk That Talk
+          </label>
+        </section> <br>
+        <section id="p4">
+          <h3> 5-Adivina la canción</h3>
+          <audio controls>
+            <source src="audio/Olivia Rodrigo - traitor (Official Video) (mp3cut.net).mp3" type="audio/mp3">
+          </audio>
+          <br> <br>
+          <label>
+            <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">Good 4 U
+          </label>
+          <br>
+          <label>
+            <input type="radio" value="2" name="p4" onclick="respuesta(4,this)"> Traitor
+          </label> <br>
+          <label>
+            <input type="radio" value="3" name="p4" onclick="respuesta(4,this)"> Deja Vu
+          </label>
+          <br>
+        </section>
+        <br>
+        <section id="p5">
+          <h3> 6-Adivina la canción</h3>
+          <audio controls>
+            <source src="audio/iñigo quintero - Si No Estás (Letra Oficial) (mp3cut.net).mp3" type="audio/mp3">
+          </audio>
+          <br> <br>
+          <label>
+            <input type="radio" value="1" name="p5" onclick="respuesta(5,this)"> Lo que queda de mi
+          </label>
+          <br>
+          <label>
+            <input type="radio" value="2" name="p5" onclick="respuesta(5,this)"> Si no estas
+          </label> <br>
+          <label>
+            <input type="radio" value="3" name="p5" onclick="respuesta(5,this)"> Desconocido
+          </label>
+          <br>
+        </section>
+        <br>
+        <br>
+
+        <div class="resultado">
+          <button onclick="verResultado()">Ver Resultado</button>
+          <h3 id="aciertos"></h3>
+          <button><a href="/index.html" class="enlace">Volver a jugar</a></button>
+        </div>
+      </div>
+
+      <script src="cancion.js"></script>
+
+
+  </body>
+</header>
+
+</html>

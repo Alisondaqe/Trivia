@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Completa la letra</title>
+    <link rel="stylesheet" href="completa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<header>
+    <center>
+        <div class="wrapper">
+            <div class="time">
+                <span class="hour">00 </span>
+                <span class="colon">:</span>
+                <span class="minute">00</span>
+                <span class="colon">:</span>
+                <span class="second">00</span>
+                <span class="colon ns-colon">:</span>
+                <span class="millisecond">00</span>
+
+
+                <div class="buttons">
+                    <button class="start">Start</button>
+                    <button class="stop">Stop</button>
+                    <button class="reset">reset</button>
+
+                </div>
+            </div>
+    </center>
+
+    <body>
+        <center>
+
+
+            <div class="container">
+                <h1>ADIVIMUSIC</h1>
+                <p>JUEGO MUSICAL</p>
+                <div class="container">
+                    <section id="p0">
+                        <h3> 1-Completa la canción:</h3>
+                        <img src="img/imagendeshakira.jpg" alt="500px" width="400px">
+                        <h4> Tiene nombre de persona buena <br>
+                            Claramente no es como suena <br>
+                            Tiene ----------------buena <br>
+                            Claramente Es igualita que tú-uh-uh-uh-uh
+                        </h4>
+                        <br>
+                        <label>
+                            <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">Nombre de persona
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">Alma </label>
+                        <br>
+                        <label>
+                            <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"> Un corazon
+                        </label>
+                        <br>
+                    </section>
+                    <br>
+                    <section id="p1">
+                        <h3> 2-Completa la canción:</h3>
+                        <img src="img/aelladekarolg.jpg" alt="500px" width="400px">
+                        <h4>.. Esta se la hice a ella, ella <br>
+                            Que se ------------------, ella <br>
+                            Puede robarme todo lo que nunca tuvo ella<br>
+                            Se la hice a ella, ella <br>
+                            Por aunque sea tan bella, ella <br>
+                            Cada que te acaricie, tu piel ya tendrá mis huellas <br>
+
+                            Es igualita que tú-uh-uh-uh-uh
+                        </h4>
+                        <br>
+                        <label>
+                            <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Cree que por bella
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Cree muy buena
+                        </label> <br>
+                        <label>
+                            <input type="radio" value="3" name="p1" onclick="respuesta(1,this)"> Cree experta
+                        </label>
+                        <br>
+                    </section>
+
+                    <section id="p2">
+                        <h3> 3-Completa la canción:</h3>
+                        <img src="/assets/img/mon.jpg" alt="500px" width="400px">
+                        <h4>..Ven y cuéntame la verdad<br>
+                            ---------------------<br>
+                            Y dime por qué, no, no no, oh <br>
+                            ¿Cómo fue que me dejaste de amar? <br>
+                            Yo aún podía soportar <br>
+                            Tu tanta falta de querer <br>
+
+                        </h4>
+                        <br>
+                        <label>
+                            <input type="radio" value="1" name="p2" onclick="respuesta(2,this)"> La Libertad
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Ten Piedad
+                        </label> <br>
+                        <label>
+                            <input type="radio" value="3" name="p2" onclick="respuesta(2,this)"> La Fuerza
+                        </label>
+                        <br>
+                    </section>
+                </div>
+
+                <div class="resultado">
+                    <button onclick="verResultado()">Ver Resultado</button>
+                    <h3 id="aciertos"></h3>
+                    <button><a href="/index.html" class="enlace">Volver a jugar</a></button>
+                </div>
+
+                <script src="completa.js"></script>
+        </center>
+    </body>
+</header>
+
+</html>

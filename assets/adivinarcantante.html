@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina Cantante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cantante.css">
+</head>
+<header> <center>
+    <div class="wrapper">
+        <div class="time">
+            <span class="hour">00 </span>
+            <span class="colon">:</span>
+            <span class="minute">00</span>
+            <span class="colon">:</span>
+            <span class="second">00</span>
+            <span class="colon ns-colon">:</span>
+            <span class="millisecond">00</span>
+
+        
+        <div class="buttons">
+            <button class="start">Start</button>
+            <button class="stop">Stop</button>
+            <button class="reset">reset</button>
+
+        </div></div>
+</center>
+    
+    <center>
+
+        <body>
+
+            <div class="container">
+                <h1>ADIVIMUSIC</h1>
+                <p>JUEGO MUSICAL</p>
+                <section id="p0">
+                    <h3>1-Adivina el cantante</h3>
+                    <img src="/assets/img/daddyyanke.jpg" alt="500px" width="500px"> <br>
+                    <label><input type="radio" value="1" name="p0" onclick="respuesta(0, this)">Bad Bunny</label><br>
+                    <label><input type="radio" value="2" name="p0" onclick="respuesta(0, this)">Nicky Jam</label><br>
+                    <label><input type="radio" value="3" name="p0" onclick="respuesta(0, this)">Farruko</label><br>
+                    <label><input type="radio" value="4" name="p0" onclick="respuesta(0, this)">Daddy Yankee</label><br>
+
+                </section>
+                <br>
+
+
+                <section id="p1">
+                    <h3>2-Adivina el cantante</h3>
+                    <img src="/assets/img/angie.jpg" alt="500px" width="500px"> <br>
+                    <label><input type="radio" value="1" name="p1" onclick="respuesta(1, this)">J-Balvin</label><br>
+                    <label><input type="radio" value="2" name="p1" onclick="respuesta(1, this)">Maluma</label><br>
+                    <label><input type="radio" value="3" name="p1" onclick="respuesta(1, this)">Camilo</label><br>
+                    <label><input type="radio" value="4" name="p1" onclick="respuesta(1, this)">Nicky Jam</label><br>
+
+                </section>
+                <br>
+
+                <section id="p2">
+                    <h3>3-Adivina el cantante</h3>
+                    <img src="/assets/img/yatra.webp" alt="500px" width="500px">
+                    <label><input type="radio" value="1" name="p2" onclick="respuesta(2, this)">Camilo</label><br>
+                    <label><input type="radio" value="2" name="p2" onclick="respuesta(2, this)">Maluma</label><br>
+                    <label><input type="radio" value="3" name="p2" onclick="respuesta(2, this)">Sebastian
+                        Yatra</label><br>
+                    <label><input type="radio" value="4" name="p2" onclick="respuesta(2, this)">Laso</label><br>
+
+                </section>
+                <br>
+
+                <section id="p3">
+                    <h3>4-Adivina el cantante</h3>
+                    <img src="/assets/img/Taebts.jpg" alt="500px" width="500px">
+                    <br>
+                    <label><input type="radio" value="1" name="p3" onclick="respuesta(3, this)">Kim Nam
+                        Joon</label><br>
+                    <label><input type="radio" value="2" name="p3" onclick="respuesta(3,
+this)">Cha Eunwoo</label><br>
+                    <label><input type="radio" value="3" name="p3" onclick="respuesta(3, this)">Kim Taeyun</label><br>
+                    <label><input type="radio" value="4" name="p3" onclick="respuesta(3, this)">Kim Tae
+                        Hyung</label>
+                </section>
+                <br>
+                <section id="p4">
+                    <h3>5-Adivina el cantante</h3>
+                    <img src="/assets/img/Oliv.webp" alt="500px" width="500px">
+                    <br>
+                    <label><input type="radio" value="1" name="p4" onclick="respuesta(4, this)">Taylor Swift</label><br>
+                    <label><input type="radio" value="2" name="p4" onclick="respuesta(4, this)">Olivia
+                        Rodrigo</label><br>
+                    <label><input type="radio" value="3" name="p4" onclick="respuesta(4, this)">Billie
+                        Eilish</label><br>
+
+                </section>
+                <br>
+
+                <section id="p5">
+                    <h3>6-Adivina el cantante</h3>
+                    <img src="/assets/img/Selena.avif" alt="500px" width="500px">
+                    <br>
+                    <label><input type="radio" value="1" name="p5" onclick="respuesta(5, this)">Selena Gomez</label><br>
+                    <label><input type="radio" value="2" name="p5" onclick="respuesta(5, this)">Camila
+                        Cabello</label><br>
+                    <label><input type="radio" value="3" name="p5" onclick="respuesta(5, this)">Selena
+                        Quintanilla</label><br>
+
+                </section>
+                <br>
+
+                <div class="resultado">
+                    <button onclick="verResultado()">Ver Resultado</button>
+                    <h3 id="aciertos"></h3>
+                    <button><a href="/index.html" class="enlace">Volver a jugar</a></button>
+                </div>
+            </div>
+
+            <script src="cantante.js"></script>
+
+        </body>
+    </center>
+</header>
+
+</html>
